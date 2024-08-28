@@ -1,0 +1,201 @@
+/* Base styles */
+body {
+    background: radial-gradient(
+        circle,
+        rgb(112, 10, 146) 0%,
+        rgb(192, 5, 5) 100%
+      );
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(52, 1, 52);
+}
+
+header img.img-name {
+    height: 60px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons .icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    margin-top: 20px;
+}
+.a, .h, .m, .e, .d,
+.a1, .l, .i{
+    font-size: 50px;
+}
+.a:hover{
+    color: rebeccapurple;
+    cursor: pointer;
+    } 
+    .h:hover {
+            color: rgb(153, 93, 51);
+            cursor: pointer;
+          }
+    .m:hover {
+            color: rgb(153, 51, 70);
+            cursor: pointer;
+    }
+    .e:hover {
+            color: rgb(51, 153, 59);
+            cursor: pointer;
+    }
+    .d:hover{
+            color: rgb(73, 51, 153);
+            cursor: pointer;
+    }
+    .a1:hover{
+            color: rgb(141, 153, 51);
+            cursor: pointer;
+    } 
+    .l:hover{
+            color: rgb(50, 10, 90);
+            cursor: pointer;
+    } 
+    .i:hover{
+            color: rgb(153, 129, 51);
+            cursor: pointer;
+    }
+.dev{
+    position: relative;
+    right: 30px;
+}
+ .profile-img {
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 100%;
+    height: auto;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+}
+
+.CV {
+    text-align: center;
+    margin-top: 20px;
+}
+.cv-btn {
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    color: rgb(125, 62, 62);
+    background-color: yellow;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+}
+.cv-btn:hover{
+    background-color: orangered;
+    color: white;
+    transform: scale(1.10);
+}
+.bio{
+    width: 500px;
+}
+p{
+    border: 2px purple;
+}
+/* Responsive styles */
+@media (max-width: 1200px) {
+    header.navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .social-icons .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contact .profile-img {
+        width: 180px;
+    }
+
+    .cv-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header.navbar {
+        padding: 10px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .social-icons .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contact .profile-img {
+        width: 150px;
+    }
+
+    .cv-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 5px;
+    }
+
+    .social-icons .icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .contact .profile-img {
+        width: 120px;
+    }
+
+    .cv-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
